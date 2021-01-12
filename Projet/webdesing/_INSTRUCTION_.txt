@@ -1,0 +1,15 @@
+
+---------------------------------Fichiers html--------------------------------
+
+"index.html" : page principale du site
+"cv.html" : page du cv
+"chapitre.html" : page de l'onglet chapitre
+"biograhie.htlm" : page de l'onglet Biographie
+
+--------------------------------Fichiers Css----------------------------------
+
+"frontstyle.css" : feuille de style de la page principale ("nakama .html")
+"style.css" :  Feuille de style des Onglets ("biographie.html" et "chapitre.html")
+"cv.css" : feuille de style du cv ("chapitre.html")
+
+

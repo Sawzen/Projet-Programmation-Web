@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang='fr'>
+	<head>
+		<meta charset="utf-8">
+		<title>One Piece</title>
+		<!-- Titre du site ce qu'il y aura écrit sur la fenetre -->
+		<link rel="stylesheet" href="frontstyle.css">
+		<script type="text/javascript" src="nakama.js"></script>
+	</head>
+	<body text="black" bgcolor="pink">
+		<header>
+			<h1>Welcome Nakama</h1>
+		</header>
+		<nav>
+			<div class="ligne_separation"></div>
+			<!-- Ligne de séparation entre le menu et le reste du site -->
+                <ul class = "menu">
+                	<!-- Ici le menu principale qui sera en position centrale 
+                	Chaque éléments du menu doit renvoyer vers une autre page html ( à définir plus tard)-->
+                	<li><a href="chapitre.html">Chapitre</a></li>
+                	<li><a href="biographie.html">Biographie des Mugiwara</a></li>
+                	<!-- Il faudra faire en sorte que le lien change de couleur a passage de la souris cf CSS -->
+                </ul>
+			</div>
+		</nav>
+		<div class="front_page ">
+			<div class="info_gauche">
+				<!-- Barre d'info avec le mail cv twitter blabla-->
+				<div class="info">
+					<h2>Adresse E-mail</h2>
+					<p><a href="hajar@nakama.jap">hajar@nakama.jap</a></p>
+					<p><a href="grace@nakama.jap">grace@nakama.jap</a></p>
+				</div>
+				<div class="info">
+					<h2>Social Media</h2>
+					<p>Linkedin:<a href="Nakama">@Nakama</a></p>
+					<p>Facebook:<a href="Nakama">@Nakama</a></p>
+					<p>Tiktok:<a href="Nakama">@Nakama</a></p>
+				</div>
+				<div class="info">
+					<h2>Adresse</h2>
+					<p><strong>Palais de Tokyo </strong>
+					<p>13 avenue du président Wilson</p>
+					<p>75116 Paris</p>
+				<div class="info">
+					<h2>CV des auteurs</h2>
+					<p><strong><a href="cvgrace.html"><em>Notre CV</em></a></strong></p>
+				</div>
+			</div>
+			<!-- Sur la première page su site il y aura un formilaire au centre sur lequel les viteurs donneront leur civilité et aussi leur avis et impression par rapport à tel ou tel personnage de One piece -->
+		</div>
+		<div class ="contenuform">
+			<form name="formulaire">
+				<h1><strong>Pour mieux vous connaître</strong></h1>
+				<div class="innerform">
+					<label for="name"><strong>Nom, prénom</strong></label>
+					<input type="text" name="nom">
+				</div></br>
+				<div class="innerform">
+					<strong>Votre Civilité</strong></br>
+					<input type="radio" checked id ="Homme" name="sexe" value="Homme">
+					<label for="Homme"> Homme </label>
+					<input type="radio" checked id ="Femme" name="sexe" value="Femme">
+					<label for="Femme"> Femme </label>
+					</div></br>
+				<div class="innerform">
+					<label for="age"><strong>Veuillez donner votre âge</strong></label>
+					<input type="text" name="age">
+				</div></br>
+				<div class="innerform">
+					<strong>Depuis combien de temps suivez-vous One piece ?</strong>
+					<input type="text" name="durée">
+				</div></br>
+				<div class="innerform">
+					<strong>Quel est votre personnage préféré?</strong>
+					<select name="personnage" id= "personne">
+						<option value="Monkey D Luffy">Monkey D luffy</option>
+						<option value="Usopp"> Usopp</option>
+						<option value="Zoro">Zoro</option>
+						<option value="Nami">Nami</option>
+						<option value="Sanji">Sanji</option>
+						<option value="Toni Toni Chopper">Toni Toni Chopper</option>
+						<option value="Nico robin">Nico Robin</option>
+						<option value="Brook">Brook</option>
+						<option value="Doflamingo">Doflamingo</option>
+						<option value="Trafalgar Law"></option>
+						<option value="Geko Moria"></option>
+						<option value="Laboon"></option>
+					</select>
+				</div></br>
+				<div class="innerform">
+					<strong> Donnez votre avis sur votre personnage préféré </strong></br>
+					<textarea id="avis" name="avis_personnage"></textarea>
+				</div></br>
+				<div class="innerform">
+					<strong>Quel est le personnage dont vous avez préféré l'évolution ?</strong></br>
+					<input type="checkbox" id="Luffy"name="evolution">
+					<label for="Luffy">Luffy</label>
+					<input type="checkbox" id="Sanji"name="evolution">
+					<label for="Sanji">Sanji</label>
+					<input type="checkbox" id="Zoro"name="evolution">
+					<label for="Zoro">Zoro</label>
+					<input type="checkbox" id="Nami"name="evolution">
+					<label for="Nami">Nami</label>
+					<input type="checkbox" id="Chopper"name="evolution">
+					<label for="Chopper">Chopper</label>
+				</div></br>
+				<div class="innerform">
+					<strong>Pour quelles raisons?</strong></br>
+					<textarea id="pq" name="explications"></textarea>
+				</div></br>
+				<div class="innerform">
+					<strong>Avez-vous des suggestions pour améliorer notre site?</strong></br>
+					<input type="radio" checked id ="Non tout est parfait :D!"name="idee" value="Non tout est parfait :D!">
+					<label for="Non tout est parfait :D!"> Non tout est parfait :D! </label></br>
+					<input type="radio" checked id = "Oui il faudrait :" name="idee" value="Oui il faudrait :">
+					<label for="Oui il faudrait :"> Oui il faudrait :</br>
+					<textarea id="une idee" name="suggestions"></textarea></label>
+				</div></br>
+				<div class="button">
+					<button type="button" onClick="showresult()">Submit Query</button>
+            	<button type="Reset">Reset</button>
+				</div></br>
+				 <div id="result">
+            </div>
+			</form>	
+		</div>
+			<footer>
+				<h2>Eiichiro Oda</h2>
+				<img src="photos/oda.jpg" alt="oda" height="250" width="250">
+				<p> ** ici biographie de Oda **</p>
+			</footer>
+		</div>
+	</body>
+</html>

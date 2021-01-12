@@ -1,0 +1,16 @@
+header{
+	margin: 0;
+	padding-top: 30px;
+	text-align: center;
+	border: 4mm ridge rgba(170, 50, 220, .6);
+}
+body em{
+	background-color: white;
+}
+.bloc{
+	text-align: center;
+}
+.bloc h1{
+	border:  thick double black;
+	background-color: white;
+}
